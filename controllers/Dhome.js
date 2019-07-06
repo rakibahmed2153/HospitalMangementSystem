@@ -22,11 +22,15 @@ router.get('*', function(req, res, next){
 });
 
 //patient
-
 router.get('/', function(req, res){
+			res.render('doctor/index');			
+	
+});
+
+router.get('/addpatient', function(req, res){
 	doctor.getAll(function(results){
 		if(results != null){
-			res.render('doctor/index', {userList: results});			
+			res.render('doctor/addPatient', {userList: results});			
 		}else{
 			res.send('Error!.. try again...');
 		}
@@ -34,7 +38,7 @@ router.get('/', function(req, res){
 	
 });
 
-router.post('/', function(req, res){
+router.post('/addpatient', function(req, res){
 	
 	var data = {
 		pctname: req.body.pname,
@@ -50,16 +54,16 @@ router.post('/', function(req, res){
 
 		if(status){
 			alert("Patient is Successfully Created");
-			res.redirect('/doctor');			
+			res.redirect('/doctor/addpatient');			
 		}else{
 		    alert("Sorry..There Is Some Error Occur");
-			res.redirect('/doctor');
+			res.redirect('/doctor/addpatient');
 		}
 	});
 }
 else{
 	alert("Password And Confirm Password Did Not Matched");
-			res.redirect('/doctor');
+			res.redirect('/doctor/addpatient');
 		
 }
 });

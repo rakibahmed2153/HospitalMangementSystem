@@ -29,7 +29,10 @@
          <div class="col-md-2 side_menu display_table_cell" style="width: 17%!important">
              <h1 style="color: aquamarine;">Doctor Panel</h1>
              <ul>
-             
+              <li class="link">
+               <a href="/doctor"><h5>Dashboard</h5></a>
+          </li>
+
          <li class="link">
             
             <a data-toggle="collapse" href="#dept" aria-expanded="false" aria-controls="collapseExample" class="active">
@@ -38,7 +41,7 @@
           
           <div class="collapse" id="dept">
             <div class="card card-body">
-               <a href="/doctor">Add Patient</a>
+               <a href="/doctor/addpatient">Add Patient</a>
              <a href="/doctor/viewpct">View Patient List</a> 
             </div>
           </div>
@@ -152,67 +155,31 @@
             
           </div>
 
+            
             <div class="col-md-12" style="margin-top: 80px;">
-             
-                   <h1 class="text-center">Add New Patient</h1>
-
-           <form method="post">
-                   <div class="col-lg-6 offset-md-3">
-                    <h5>Patient Name:</h5>
-                    <input class="form-control" type="text" name="pname" style="width:100%;" required>
-                    <span id="msg1"></span><br>
-                </div>
-                <br>
-                    <div class="form-group col-lg-6 offset-md-3" >
-                      <h5>Phone Number:</h5>
-                         <input class="form-control" type="text" name="pnumber" style="width:100%;" required>                   
-                     </div>
-                     <br>
-                   
-                   <div class="form-group col-lg-6 offset-md-3" >
-                      <h5>Problems:</h5>
-                         <input class="form-control" type="text" name="pprob" style="width:100%;" required>                   
-                     </div>
-                     <br>
-                     <div class="form-group col-lg-6 offset-md-3" >
-                      <h5>Doctor Seletion:</h5>
-                         <select class="custom-select" style="width:100%;" name="pdoct">
-                           <% for(var i=0; i < userList.length; i++){ %>
-
-                           <option name="<%= userList[i].dname %>"><%= userList[i].dname %></option>
-                         <% } %>
-
-                         </select> 
-
-                     </div>
-                     <br>
-                     <div class="form-group col-lg-6 offset-md-3" >
-                      <h5>Address:</h5>
-                         <input class="form-control" type="text" name="paddress" style="width:100%;" required>                   
-                     </div>
-                     <br>
-                   <div class="form-group col-lg-6 offset-md-3" >
-                      <h5>Password:</h5>
-                         <input class="form-control" type="Password" name="pass" style="width:100%;" required>                   
-                     </div>
-                     <br>
-                   <div class="form-group col-lg-6 offset-md-3" >
-                      <h5>Confirm Password:</h5>
-                         <input class="form-control" type="Password" name="confirmpass" style="width:100%;" required>                   
-                     </div>
-                     <br>
-                   
-                   
-                   
-                    <div class="col-lg-6 offset-md-3">
-                   <input style="color:  #004d00;width:100px;" type="submit" name="submit" value="Submit" >
-            <input style="color:  #ff0000;width: 100px; margin-bottom: 40px;" type="reset">
-                       </div>
-                  </form>
-                  
+                <h1 class="text-center">Dashboard</h1>
+                <hr>
+                <div class="container1">
+        <ul>
+            <li> <div class="bottom"><a href="/doctor/addpatient"><h5>Add Patient</h5></a></div> </li>
+            <li> <div class="bottom"> <a href="/doctor/viewpct"><h5>View Patient List</h5></a> </div> </li>
+            <li> <div class="bottom"> <a href="/doctor/vappoint"><h5>Appointment List</h5></a></div> </li>
+            <li> <div class="bottom"><a href="/doctor/addprescrip"><h5>Add Prescription</h5></a></div> </li>
+            <li> <div class="bottom"><a href="/doctor/vprescrip"><h5>Update Prescription</h5></a></div></li>
+            <li> <div class="bottom"><a href="/doctor/addbed"><h5>Bed Allotment</h5></a></div> </li>
+            <li> <div class="bottom"><a href="/doctor/vbed"><h5>Update Bed Lists<h5></a></div> </li>
+            <li> <div class="bottom"><a href="/doctor/vnotice"><h5>View Notices</h5></a></div></li>
+            <li> <div class="bottom"><a href="/doctor/voperationlist"><h5>View Operation Lists</h5></a></div></li>
+            <li> <div class="bottom"><a href="/doctor/addoperation"><h5>Operation Occure</h5></a></div></li>
+            <li> <div class="bottom"><a href="/doctor/managePro"><h5>Manage Profile</h5></a></div> </li>
+            <li> <div class="bottom"><a href="/doctor/cngpass"><h5>Change Password</h5></a></div> </li>
+            
+            
+        </ul>
+    </div>
+                                
               
             </div>
-
          </div>
         
        </div>

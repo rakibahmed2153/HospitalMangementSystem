@@ -21,15 +21,20 @@ router.get('*', function(req, res, next){
 	}
 });
 
-//appointment
 router.get('/', function(req, res){
+	
+			res.render('patient/index');			
+});
+
+//appointment
+router.get('/vappoint', function(req, res){
 	
 	var data={
     	uname:req.session.un
     }
 	patient.getByUn1(data, function(results){
 		if(results != null){
-			res.render('patient/index', {userList: results});			
+			res.render('patient/viewAppoint', {userList: results});			
 		}else{
 			res.send('Error!.. try again...');
 		}

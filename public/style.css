@@ -134,10 +134,11 @@ margin-bottom: 50px;
 padding: 18px;
 }
 .container1{
-    width: 90%;
+    width: 104%;
     margin: auto;
     overflow: hidden;
     margin-top: 20px;
+    margin-left: -40px;
 }
 
 .container1 ul{
@@ -163,7 +164,7 @@ padding: 18px;
 }
 
 .container1 ul li a{
-    line-height: 130px;
+    line-height: 55px;
     text-align: center;
     color: navy;
     font-size: 20px;
