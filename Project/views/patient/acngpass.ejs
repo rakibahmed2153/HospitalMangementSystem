@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html style="height: 100%">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Medicine Store</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/scrolling-nav.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/style.css" rel="stylesheet">
+
+     <!-- Title Icon -->
+    <link rel="icon" href="/icon.ico" alt="Logo">
+</head>
+
+  <body style="height: 100%" class="admin">
+    
+    <div class="container-fluid display_table">
+       <div class="row display_table_row">
+                  <div class="col-md-2 side_menu display_table_cell" style="width: 17%!important">
+             <h1 style="color: aquamarine;">Patient Panel</h1>
+             <ul>
+             
+          <li class="link">
+               <a href="/patient"><h5>View Apponitment</h5></a>
+          </li>
+           <li class="link">
+               <a href="/patient/vprescrip"><h5>View Prescription</h5></a>
+          </li>
+           <li class="link">
+               <a href="/patient/vdoctor"><h5>View Doctor Lists</h5></a>
+          </li>
+          
+          <li class="link">
+            
+            <a data-toggle="collapse" href="#note" aria-expanded="false" aria-controls="collapseExample" class="active">
+             <h5> NoticeBoard </h5>
+            </a>
+          
+          <div class="collapse" id="note">
+            <div class="card card-body">
+             <a href="/patient/vnotice">View Notices</a> 
+            </div>
+          </div>
+          </li>
+           <li class="link">
+            
+            <a data-toggle="collapse" href="#adm" aria-expanded="false" aria-controls="collapseExample" class="active">
+             <h5> Blood Bank </h5>
+            </a>
+          
+          <div class="collapse" id="adm">
+            <div class="card card-body">
+             <a href="/patient/vblood">View Avaliable Bloods</a> 
+            </div>
+          </div>
+          </li>
+         
+         <li class="link">
+               <a href="/patient/vreport"><h5>Operation Report</h5></a>
+          </li>
+           <li class="link">
+               <a href="/patient/vbed"><h5>Bed Allotment</h5></a>
+          </li>
+           <li class="link">
+               <a href="/patient/managePro"><h5>Manage Profile</h5></a>
+          </li>
+
+           <li class="link">
+               <a href="/patient/cngPass"><h5>Change Password</h5></a>
+          </li>      
+        </ul>
+         </div>
+
+         <div class="col-md-10 display_table_cell">
+          <div class="row" id="nav-header">
+            
+              <div class="col-md-7 offset-md-2">
+                <ul >
+
+                  <li><h4 style="color: aquamarine;">Welcome To Administator Area</h4></li>
+                  <li style="margin-left: 145px;">
+                    <a href="/logout"><img src="/logout.png" style="width: 25px;" alt="Logout Icon">
+                      Log out
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            
+          </div>
+
+            <div class="col-md-12 text-center" style="margin-top: 80px;">
+             
+            <form method="post">
+                  
+                    <div class="form-group col-lg-6 offset-md-3" >
+                      <h5>New Password:</h5>
+                         <input class="form-control" type="password" name="new" style="width:100%;">                   
+                     </div>
+                     <br>
+                   
+                   <div class="form-group col-lg-6 offset-md-3" >
+                      <h5>Confirm Password:</h5>
+                         <input class="form-control" type="password" name="confirm" style="width:100%;">                   
+                     </div>
+                     
+                   
+                   
+                   
+                    <div class="col-lg-6 offset-md-3">
+                   <input style="color:  #004d00;width:100px;" type="submit" name="submit" value="Submit" >
+            <input style="color:  #ff0000;width: 100px; margin-bottom: 40px;" type="reset">
+                       </div>
+                  </form>
+               <div class="col-lg-6 offset-md-3">
+                  <h5 style="color: red">
+              <%if(typeof errors != "undefined"){%>
+                  <% errors.forEach(function(err){ %>
+                    <%=err.msg%> <br/>
+                <% }); %>
+              <% } %>
+              </h5> 
+              </div>
+              
+
+                                  
+              
+            </div>
+
+         </div>
+        
+       </div>
+      
+    </div>
+
+
+
+
+     <!-- Bootstrap core JavaScript -->
+    <script src="/jquery.min.js"></script>
+    <script src="/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/jquery.easing.min.js"></script>
+
+    <!-- Custom JavaScript for this theme -->
+    <script src="/scrolling-nav.js"></script>
+
+    <!--Bootstrap JavaScript -->
+    <script src="/bootstrap.min.js"></script>
+  </body>
+</html>

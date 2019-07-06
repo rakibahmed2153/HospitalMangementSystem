@@ -1,0 +1,179 @@
+.logo{
+  margin-left: 20px;
+   height: 60px;
+  width: 140px;
+}
+.bg_color{
+  background-color: #34b091;
+}
+.banner{
+  margin-top: -64px!important;
+        margin-bottom: -150px;
+}
+.banner img{
+  
+  height: 400px;
+}
+.size{
+   height: 40px;
+}
+.size2{
+	height: 28px;
+    margin-top: 5px;
+}
+.login
+{
+	background-image:url(bg5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-dark {
+    background-color: #343AB4!important;
+}
+.nav-link{
+	color: white!important;
+}
+.btn-secondary:hover {
+    color: #fff;
+    background-color: #343AB4!important;
+    border-color: #343AB4!important;
+}
+.btn-secondary {
+    color: #fff;
+    background-color: #343AB4!important;
+    border-color: #343AB4!important;
+}
+.form-inline {
+   
+    display: inline;
+    
+}
+.red{
+    color:red;
+    }
+ .left{
+      float: left;
+    }
+
+
+.side_menu{
+  background-color: #2f4058;
+  padding: 0px;
+}
+.side_menu h1{
+  color:  #fff;
+  text-align: center;
+  margin: 10px 0px;
+  font-size: 25px;
+  margin-bottom: 55px;
+}
+.display_table{
+  display: table;
+  padding: 0px;
+  height: 100%;
+}
+.display_table_row{
+  display: table-row;
+  height: 100%;
+}
+.display_table_cell{
+  display: table-cell;
+  float: none;
+  height: 100%;
+}
+.top{
+  vertical-align: top; 
+  
+}
+#nav-header{
+  background-color: #B4B4B4;
+ border-bottom: 1px solid #e7eaec; 
+}
+#nav-header ul{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  color: #676a6c; 
+}
+#nav-header ul li{
+  margin-left: 15px;
+  padding: 17px 8px;
+  float: left;
+}
+.card {
+  margin: 0px;
+  padding: 0px;
+  background-color: #2f4058;
+background-clip: border-box;
+border: 1px solid #2f4058;
+padding-left: 15px;
+}
+.admin ul
+{
+  text-decoration: none;
+}
+.admin a{
+  text-decoration: none;
+  color: #fff;
+
+}
+.admin a:hover{
+    color: #777777;
+
+}
+.side_menu ul{
+  list-style: none;
+}
+.design{
+  border: 1px solid #333;
+background-color: #f1f1f1;
+border-radius: 5px;
+padding: 16px;
+text-align: center;
+margin-bottom: 50px;
+padding: 18px;
+}
+.container1{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.container1 ul{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.container1 ul li{
+    float:left;
+    list-style: none;
+    width:20%;
+    height:140px;
+    background-color: #f1f1f1;
+    margin :20px 0px 20px 55px; 
+    border:1px solid;
+    box-sizing: border-box;
+}
+.container1 ul li:hover{
+        color: red;
+    opacity: 0.8;
+    background-color: silver;
+}
+
+.container1 ul li a{
+    line-height: 130px;
+    text-align: center;
+    color: navy;
+    font-size: 20px;
+    margin-left: 20px;
+   
+}
+
+@media screen and (max-width:1250px){
+    .container1 ul li{
+        width:40%;
+        margin-left: 40px;
+         
+    }

@@ -1,0 +1,38 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "It is hospital management project. There are 4 users such as Admin, Doctors, Patients, Nurses.To maintaining a hospital managment all the necessary things are added in the system",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rakibahmed2153/HospitalMangementSystem.git"
+  },
+  "keywords": [
+    "Hospital",
+    "Mangement",
+    "System",
+    "Web",
+    "Application"
+  ],
+  "author": "Rakib Ahmed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rakibahmed2153/HospitalMangementSystem/issues"
+  },
+  "homepage": "https://github.com/rakibahmed2153/HospitalMangementSystem#readme",
+  "dependencies": {
+    "alert-node": "^1.2.5",
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.4",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "express-session": "^1.16.2",
+    "express-validator": "^5.3.1",
+    "js-alert": "^1.0.4",
+    "mysql": "^2.17.1"
+  }
+}

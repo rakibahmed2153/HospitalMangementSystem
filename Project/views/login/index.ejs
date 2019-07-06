@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+
+    <title>Admin Login</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/scrolling-nav.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/style.css" rel="stylesheet">
+
+    
+
+</head>
+<body id="page-top">
+  <!--
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+
+      <div class="col-lg-3 text-center">
+      <a class="navbar-brand" href="#"><img src="images/logo.png" class="logo" alt="Responsive image"></a>
+      </div>
+
+     
+
+
+      <div class="col-lg-3 offset-lg-5 collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="home.php"><img src="images/home.png" class="size2"></a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="Cart.php"><img src="images/cart.png" class="size"></a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#page-top"><img src="images/user.png" class="size2"></a>
+          </li>
+        </ul>
+       
+      </div>
+
+    </nav>
+-->
+<section class="login">
+    
+	  <div class="container">
+          <div class="row">
+             <div class="col-lg-12 text-center">
+                
+        		<p>
+        		<h1 style="color: #ff0066">LogIn Page</h1>
+        		<h2 style="color: #ff0066">Please Log in with your <i>REGISTERED</i> account</h2>	
+        		</p>
+
+        		<form method="post">
+        		<div class="offset-lg-4 col-lg-4">
+              User Type: <br>
+               <select class="custom-select" style="width:100%;" name="opt">
+
+                           <option value="admin">Admin</option>
+                           <option value="patient">Patient</option>
+                           <option value="doctor">Doctor</option>
+                           <option value="nurse">Nurse</option>
+                  
+
+              </select> 
+
+        		Username:<br>
+        		<input class="form-control" type="text" name="username" value="">
+        		Password:<br>
+        		<input class="form-control" type="password" name="password"  value=""><br><br>
+        		
+        		<input style="color:  #004d00;width:100px;" type="submit" name="submit"  value="Login" >
+        		<input style="color:  #ff0000;width: 100px;" type="reset">
+	        	</form>
+
+            <br>
+            <h5 style="color: red">
+              <%if(typeof errors != "undefined"){%>
+                  <% errors.forEach(function(err){ %>
+                    <%=err.msg%> <br/>
+                <% }); %>
+              <% } %> 
+</h5>
+                </div>
+            </div>
+       </div>
+	</div>
+</section>
+
+		
+
+</body>
+
+<!-- Bootstrap core JavaScript -->
+    <script src="/jquery.min.js"></script>
+    <script src="/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/jquery.easing.min.js"></script>
+
+    <!-- Custom JavaScript for this theme -->
+    <script src="/scrolling-nav.js"></script>
+
+    <!--Bootstrap JavaScript -->
+    <script src="/bootstrap.min.js"></script>
+</html>
