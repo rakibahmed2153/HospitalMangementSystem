@@ -27,7 +27,7 @@
     "alert-node": "^1.2.5",
     "body-parser": "^1.19.0",
     "connect-flash": "^0.1.1",
-    "cookie-parser": "^1.4.4",
+    "cookie-parser": "^1.4.6",
     "ejs": "^2.6.2",
     "express": "^4.17.1",
     "express-session": "^1.16.2",
